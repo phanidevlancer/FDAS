@@ -1,11 +1,11 @@
-package com.example.fdas
+package com.fmr.fda.mobile
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.example.fdas.databinding.SplashScreenBinding
+import com.fmr.fda.mobile.databinding.SplashScreenBinding
 
 class SplashScreen : AppCompatActivity() {
 
@@ -25,7 +25,7 @@ class SplashScreen : AppCompatActivity() {
     private fun startLogin() {
         mHandler = Handler(Looper.getMainLooper())
         mRunnable = Runnable {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, NoticeActivity::class.java)
             startActivity(intent)
             finish()
         }

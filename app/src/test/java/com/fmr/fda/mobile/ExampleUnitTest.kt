@@ -1,4 +1,4 @@
-package com.example.fdas
+package com.fmr.fda.mobile
 
 import org.junit.Test
 

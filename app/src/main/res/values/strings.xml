@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">FDAS</string>
+    <string name="notice_title">Notice</string>
+    <string name="notice_desp">This application is intended only for persons that are authorized to access Fidelity Digital Assets accounts.\n\nIf you are a credentialed user, please click “OK” below to proceed to the log-in page.\n\nIf you are not a registered customer of Fidelity Digital Assets, please close and uninstall this application.</string>
+    <string name="ok_button">OK</string>
+    <string name="no_internet">No Internet Connection Detected</string>
+    <string name="internet_description">A WiFi or cellular network connection is required to use this application. Please check your network settings, then try again.</string>
+    <string name="no_service">Your request cannot be \n completed.</string>
+    <string name="service_error_des">If you need assistance, contact our Client \n Service Team: \n +1-844-370-0410 (US) \n or\n +44-800-011-9268 (non-US) </string>
+    <string name="support">support.digitalassets@fidelity.com</string>
+    <string name="noaccount">I don\'t have an account</string>
+    <string name="login">Log In</string>
+
 </resources>
