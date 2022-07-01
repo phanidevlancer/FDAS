@@ -12,14 +12,9 @@ fun Activity.isInternetConnected(): Boolean {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
         val capabilities =
             connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
-        if (capabilities != null) {
-            if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
-                return true
-            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)) {
-                return true
-            } else if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
-                return true
-            }
+        capabilities?.let {
+            return it.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                    it.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
         }
     } else {
         val activeNetwork = connectivityManager.activeNetworkInfo
